@@ -7,7 +7,9 @@ spring:
     cache-names: vets
   profiles:
     active: production
-
+  eureka:
+    instance:
+      prefer-ip-address: true
 ---
 spring:
   config:
