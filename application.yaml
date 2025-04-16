@@ -26,6 +26,9 @@ spec:
             commit: ${COMMIT}
           api-gateway:
             commit: ${COMMIT}
+            ingress:
+              enabled: true
+              host: petclinic-${NAMESPACE}.tech
           admin-server:
             commit: ${COMMIT}
   destination:
